@@ -41,9 +41,13 @@ body {
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
   .container .header {
+    font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
-    border-bottom: var(--color-grey-light-2); }
+    border-bottom: var(--color-grey-light-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .container .content {
     display: flex; }
     .container .content .sidebar {
@@ -52,3 +56,53 @@ body {
     .container .content .hotel-view {
       background-color: red;
       flex: 1; }
+
+.logo {
+  height: 3.25rem;
+  margin-left: 3rem; }
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .search .input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all .2s;
+    margin-right: -3.5rem; }
+    .search .input:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3); }
+    .search .input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4); }
+  .search .input:focus + .button:focus {
+    background-color: var(--color-grey-light-3); }
+  .search .button {
+    border: none;
+    background-color: var(--color-grey-light-2); }
+    .search .button:focus {
+      outline: none; }
+    .search .button:active {
+      transform: translateY(2px); }
+    .search .button .icon {
+      height: 2rem;
+      width: 2rem;
+      fill: var(--color-grey-dark-3); }
+
+.user-nav {
+  background-color: greenyellow; }
+  .user-nav .icon-box .icon {
+    height: 2.25rem;
+    width: 2.25rem; }
+  .user-nav .user .photo {
+    height: 3.75rem;
+    border-radius: 50%; }
